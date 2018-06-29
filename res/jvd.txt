@@ -1,0 +1,15 @@
+AllClassLoader
+Settings:
+VwSettings
+SetLnF
+end
+Utilities:
+Calculator
+Clock
+FileManager
+JNotepad
+TerminalWindow
+end
+Games:
+TicTacToe
+end
