@@ -24,24 +24,7 @@ public class JVDSetup {
 
 		try {
 	  	String inputline;
-	  	String directory = System.getProperty("user.dir");
-			File inputFile = new File(directory, filename);
-			if(!inputFile.exists() || !inputFile.isFile()) {
-				Frame f = new Frame();
-    		FileDialog d = new FileDialog(f, "JVD set up file not found");
-				d.setDirectory(directory);
-    		d.setFile(default_filename);
-    		d.show();
-    		// need error checking for directory and file
-    		inputFile = new File(new File(d.getDirectory()), d.getFile());    		
-				//if(inputFile == null)
-					//throw new FileCopyException("jvd.set not found\n");
-			}
-			if(!inputFile.canRead()) {
-				//throw new FileCopyException("jvd.set not readable\n");
-			}
-			FileInputStream inputstream	= new FileInputStream(inputFile);
-			BufferedReader fis = new BufferedReader(new InputStreamReader(inputstream));
+			BufferedReader fis = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(filename)));
  		           
 			// parse looking for end of line
 			int i =0;
@@ -52,9 +35,6 @@ public class JVDSetup {
 	 			program_list.addElement(inputline);
 			}
   		fis.close();
-		} catch (FileNotFoundException e) {
-			programs = null;
-			System.out.println("JVDsetup file not found: " + e);
 		} catch (IOException e) {
 			System.out.println("JVDSetup io exception: " + e);
 		}

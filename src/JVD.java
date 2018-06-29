@@ -16,7 +16,6 @@ public class JVD extends JFrame {
     	f.setVisible(true);
 	  	f.addWindowListener(new WindowAdapter() {
 				public void windowClosing(WindowEvent e) {
-            System.exit(0);
   			}  
    		});
 		}
