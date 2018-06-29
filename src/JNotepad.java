@@ -25,10 +25,10 @@ import java.io.*;
 import java.net.URL;
 import java.util.*;
 
-import com.sun.java.swing.text.*;
-import com.sun.java.swing.undo.*;
-import com.sun.java.swing.event.*;
-import com.sun.java.swing.*;
+import javax.swing.text.*;
+import javax.swing.undo.*;
+import javax.swing.event.*;
+import javax.swing.*;
 
 /**
  * Sample application using the simple text editor component that

@@ -1,4 +1,4 @@
-import com.sun.java.swing.*;
+import javax.swing.*;
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;

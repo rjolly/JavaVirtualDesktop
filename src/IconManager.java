@@ -1,7 +1,7 @@
 import java.lang.*;
 import java.util.*;
-import com.sun.java.swing.JInternalFrame;
-import com.sun.java.swing.JComponent;
+import javax.swing.JInternalFrame;
+import javax.swing.JComponent;
 
 // Scott Griswold  4/98
 // Java Portable Desktop Manager

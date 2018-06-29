@@ -42,7 +42,7 @@ import java.util.*;
 import java.awt.*;
 import java.applet.*;
 import java.text.*;
-import com.sun.java.swing.*;
+import javax.swing.*;
 
 public class Clock extends JInternalFrame {
 	public Clock() {

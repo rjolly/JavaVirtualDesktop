@@ -31,7 +31,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.*;
-import com.sun.java.swing.*;
+import javax.swing.*;
 /**
  * A TicTacToe applet. A very simple, and mostly brain-dead
  * implementation of your favorite game! <p>

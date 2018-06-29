@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
-import com.sun.java.swing.*;
+import javax.swing.*;
 
 
 // Scott Griswold  4/98

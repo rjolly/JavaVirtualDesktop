@@ -4,7 +4,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 import java.beans.*;
-import com.sun.java.swing.*;
+import javax.swing.*;
 
 // Scott Griswold  4/98
 // Java Portable Desktop Manager

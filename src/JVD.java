@@ -2,7 +2,7 @@
  
 import java.awt.*;
 import java.awt.event.*;
-import com.sun.java.swing.JFrame;
+import javax.swing.JFrame;
 
 // creates a frame and puts the JVD panel into it - JVD does all the work
 public class JVD extends JFrame {

@@ -1,7 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
-import com.sun.java.swing.*;
-import com.sun.java.swing.preview.*;
+import javax.swing.*;
 
 /* Utility for changing desktop manager and virtual window features
 

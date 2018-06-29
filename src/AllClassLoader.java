@@ -4,8 +4,7 @@
 
 import java.awt.*;
 import java.awt.event.*;
-import com.sun.java.swing.*;
-import com.sun.java.swing.preview.*;
+import javax.swing.*;
 import java.util.*;
 
 public class AllClassLoader extends JInternalFrame {
