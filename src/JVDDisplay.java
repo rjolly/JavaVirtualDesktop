@@ -65,7 +65,6 @@ public class JVDDisplay extends JDesktopPane implements MouseListener, ActionLis
 	  			  	
 		setBackground(SystemColor.desktop);	//jdk1.1 feature to match OS
 		setOpaque(true);	//needed if set background color
-		setDefaultLnF();
 	    	    
 		enableEvents(AWTEvent.MOUSE_EVENT_MASK); // component handling popup actions			
  		addMouseListener(this);	 		 			

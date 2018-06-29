@@ -96,16 +96,6 @@ class Notepad extends JPanel implements UndoableEditListener {
             catch(PropertyVetoException pve) {;}
             //System.exit(1);
         }
-		// Force SwingSet to come up in the Cross Platform L&F
-		try {
-	    //UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-	    // If you want the System L&F instead, comment out the above line and
-	    // uncomment the following:
-	     UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (Exception exc) {
-	    System.err.println("Error loading L&F: " + exc);
-		}
-
 		setBorder(BorderFactory.createEtchedBorder());
 		setLayout(new BorderLayout());
 

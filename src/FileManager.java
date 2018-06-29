@@ -96,15 +96,6 @@ public class FileManager extends JInternalFrame {
 		if(System.getProperty("os.name").compareTo(UNIXOS) == 0)
 			os = new String(UNIXOS);
 		else os = new String(WINOS);
-
-		try {UIManager.setLookAndFeel(WINDOWSLF);
-  			//SwingUtilities.updateComponentTreeUI(this);		
-    }
-		catch (UnsupportedLookAndFeelException lf) {
-       System.err.println("unsupported factory in constructor ");  }
-		catch(IllegalAccessException iae) {;}
-		catch(InstantiationException ie) {;}	
-		catch(ClassNotFoundException cnfe) {;}
 		
 	} // end constructor
  	
