@@ -33,7 +33,6 @@ public class JVDDisplay extends JDesktopPane implements MouseListener, ActionLis
 		
 	private Vector app_vector = null;	// initialized in constructor
 	private IconManager icon_manager;
-	private LocalClassLoader flc;
 	private Class parms[]= null;
 	
 	private JVDSetup jvdsetup;	
@@ -297,11 +296,9 @@ public class JVDDisplay extends JDesktopPane implements MouseListener, ActionLis
 		Point vw_origin = vwdata.getGridOrigin();
 		// uses class loader to load file from it's name					
 		// assumed to be JInternalFrame class
-		flc = new LocalClassLoader();
-		Class c = flc.loadClass(event.getActionCommand());
-		JInternalFrame fr = null;	
 		try {	
-      fr = (JInternalFrame)c.newInstance(); 
+		Class c = Class.forName(event.getActionCommand());
+		JInternalFrame fr = (JInternalFrame)c.newInstance(); 
       // set manager properties					
 			fr.setLocation(initial_x, initial_y);
      	fr.setVisible(true);    		
@@ -317,7 +314,7 @@ public class JVDDisplay extends JDesktopPane implements MouseListener, ActionLis
 			icon_manager.addEntry(fr, ico);
 			repaint();
 		}
-		catch(Exception e) {
+		catch(ReflectiveOperationException e) {
      	System.out.println("loading internal frame exception " + e);
      	JOptionPane.showInternalMessageDialog(this, "Could not load class", "Desktop Manager", JOptionPane.INFORMATION_MESSAGE);
     }
