@@ -75,8 +75,8 @@ public class TicTacToe extends JInternalFrame implements MouseListener {
 	
 	public TicTacToe() {
 		Toolkit	tkit = Toolkit.getDefaultToolkit();
-		notImage = tkit.getImage("not.gif");
-		crossImage = tkit.getImage("cross.gif");
+		notImage = tkit.getImage(getClass().getResource("not.gif"));
+		crossImage = tkit.getImage(getClass().getResource("cross.gif"));
 			
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout()); 
