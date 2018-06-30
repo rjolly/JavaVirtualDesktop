@@ -4,4 +4,7 @@ mkdir("build/classes");
 javac("src", "build/classes");
 copy("res", "build/classes");
 
-jar("jvd.jar", "build/classes", ".*", "manifest.mf");
+mkdir("dist");
+jar("dist/javavirtualdesktop.jar", "build/classes", ".*", "manifest.mf");
+
+publish("dist")
